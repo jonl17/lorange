@@ -4,6 +4,7 @@ import { createStore as createThisStore } from "redux"
 import rootReducer from "./src/state/index"
 import { GlobalStyle } from "./src/components/GlobalStyle"
 import Wrap from "./src/components/Wrap"
+import "./src/font/font.css"
 
 const createStore = () => createThisStore(rootReducer)
 
