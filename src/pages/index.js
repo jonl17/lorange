@@ -1,3 +1,5 @@
 import React from "react"
 
-export default () => <p className="bold">YO</p>
+export default () => (
+  <p className="bold">Jón Gabríel Lorange - jglorange@gmail.com</p>
+)
