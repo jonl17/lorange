@@ -9,21 +9,32 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `work`,
-        path: `${__dirname}/work`,
+        path: `${__dirname}/static/assets`,
+        name: "assets",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
-        path: `${__dirname}/static/assets`,
+        path: `${__dirname}/work`,
+        name: "work",
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {},
+          },
+        ],
+      },
+    },
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-styled-components`,
   ],
 }

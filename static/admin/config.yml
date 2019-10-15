@@ -3,6 +3,7 @@ backend:
   repo: jonl17/lorange
 media_folder: static/assets
 public_folder: assets
+media_folder_relative: true
 collections:
   - name: works
     label: Work
