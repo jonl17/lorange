@@ -1,7 +1,9 @@
-import { SET_DEVICE } from "./action"
+import { SET_DEVICE, CHANGE_CHANNEL, SET_DESCRIPTION } from "./action"
 
 const initialState = {
   device: undefined,
+  channel: undefined,
+  description: undefined,
 }
 
 export default (state = initialState, action) => {
@@ -18,6 +20,10 @@ export default (state = initialState, action) => {
         device = `browser`
       }
       return { ...state, device: device }
+    case CHANGE_CHANNEL:
+      return { ...state, channel: action.channel }
+    case SET_DESCRIPTION:
+      return { ...state, description: action.description }
     default:
       return state
   }

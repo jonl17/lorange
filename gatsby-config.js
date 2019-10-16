@@ -5,6 +5,10 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Jón Gabríel Lorange`,
+    jobs: [`Web Developer`, `Musician`],
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
