@@ -1,15 +1,15 @@
 export const GridNames = {
-  LeftTopCorner: "ltcorner",
-  RightTopCorner: "rtcorner",
-  LeftBottomCorner: "lbcorner",
-  RightBottomCorner: "rbcorner",
+  gridTop: "gridtop",
+  gridBottom: "gridbottom",
+  gridFixedTop: "gridfixedtop",
+  gridFixedBottom: "gridfixedbottom",
 }
 export const Margins = {
   BrowserSmall: "30px",
-  Border: "8px",
+  Border: "10px",
 }
 export const Colors = {
-  White: "whitesmoke",
+  White: "white",
   Black: "#101010",
   Orange: "#fdad5c",
   OrangeLight: "#F5C89C",
@@ -23,4 +23,8 @@ export const TVSize = {
 export const FontSizes = {
   Paragraph: "35px",
   Title: "50px",
+}
+export const Z = {
+  show: 1,
+  hide: 0,
 }

@@ -7,16 +7,20 @@ const GetSites = () => (
   <StaticQuery
     query={graphql`
       {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: frontmatter___order }) {
           edges {
             node {
               frontmatter {
                 title
                 about
                 url
+                honnun
+                video {
+                  publicURL
+                }
                 image {
                   childImageSharp {
-                    fluid {
+                    fluid(quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

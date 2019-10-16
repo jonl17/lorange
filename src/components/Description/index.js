@@ -5,7 +5,19 @@ import { connect } from "react-redux"
 const Description = ({ description }) => {
   return (
     <Container>
-      {description !== undefined ? <Text>{description}</Text> : <></>}
+      {description !== undefined ? (
+        <>
+          {" "}
+          <Text>{description.about}</Text>{" "}
+          {description.honnun !== null ? (
+            <Text>Design: {description.honnun}</Text>
+          ) : (
+            <></>
+          )}
+        </>
+      ) : (
+        <></>
+      )}
     </Container>
   )
 }

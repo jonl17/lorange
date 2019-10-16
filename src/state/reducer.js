@@ -1,9 +1,15 @@
-import { SET_DEVICE, CHANGE_CHANNEL, SET_DESCRIPTION } from "./action"
+import {
+  SET_DEVICE,
+  CHANGE_CHANNEL,
+  SET_DESCRIPTION,
+  SET_VIDEOZ,
+} from "./action"
 
 const initialState = {
   device: undefined,
   channel: undefined,
   description: undefined,
+  videoZ: 0,
 }
 
 export default (state = initialState, action) => {
@@ -24,6 +30,8 @@ export default (state = initialState, action) => {
       return { ...state, channel: action.channel }
     case SET_DESCRIPTION:
       return { ...state, description: action.description }
+    case SET_VIDEOZ:
+      return { ...state, videoZ: action.z }
     default:
       return state
   }

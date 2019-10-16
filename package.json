@@ -23,7 +23,7 @@
     "gatsby-remark-images": "latest",
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.1.33",
-    "gatsby-transformer-remark": "latest",
+    "gatsby-transformer-remark": "^2.6.30",
     "gatsby-transformer-sharp": "latest",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

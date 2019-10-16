@@ -9,8 +9,8 @@ export const Container = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 50vh auto;
   grid-template-areas:
-    "${GridNames.LeftTopCorner}"
-    "${GridNames.LeftBottomCorner}";
+    "${GridNames.gridTop}"
+    "${GridNames.gridBottom}";
   border-right: solid ${Margins.Border} ${Colors.Black};
   box-sizing: border-box;
 `

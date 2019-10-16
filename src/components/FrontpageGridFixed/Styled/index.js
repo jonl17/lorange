@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { GridNames } from "../../../constants"
 
 export const Container = styled.div`
   position: fixed;
@@ -9,9 +10,9 @@ export const Container = styled.div`
   width: 50vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50vh 50vh;
+  grid-template-rows: 65vh 50vh;
   grid-template-areas:
-    "gridfixedtop"
-    "gridfixedbottom";
+  "${GridNames.gridFixedTop}"
+  "${GridNames.gridFixedBottom}";
   box-sizing: border-box;
 `

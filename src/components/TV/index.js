@@ -1,13 +1,13 @@
 import React from "react"
-import { Container, Image } from "./Styled"
+import { Container, Video } from "./Styled"
 import { connect } from "react-redux"
 
-const TV = ({ channel }) => {
-  console.log(channel)
+const TV = ({ channel, videoZ }) => {
   return (
-    <Container>
+    <Container videoZ={videoZ}>
       {channel !== undefined ? (
-        <Image fluid={channel.childImageSharp.fluid}></Image>
+        //  <Image fluid={channel.childImageSharp.fluid}></Image>
+        <Video loop autoPlay muted src={channel.publicURL}></Video>
       ) : (
         <></>
       )}
@@ -17,6 +17,7 @@ const TV = ({ channel }) => {
 
 const mapStateToProps = state => ({
   channel: state.reducer.channel,
+  videoZ: state.reducer.videoZ,
 })
 
 export default connect(mapStateToProps)(TV)

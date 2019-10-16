@@ -13,3 +13,8 @@ export const setDescription = description => ({
   type: SET_DESCRIPTION,
   description,
 })
+export const SET_VIDEOZ = "SET_VIDEOZ"
+export const setVideoZ = z => ({
+  type: SET_VIDEOZ,
+  z,
+})

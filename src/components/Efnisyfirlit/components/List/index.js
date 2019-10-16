@@ -1,14 +1,20 @@
 import React from "react"
 import { Listi, Item, Text } from "./Styled"
 import { connect } from "react-redux"
-import { changeChannel, setDescription } from "../../../../state/action"
+import {
+  changeChannel,
+  setDescription,
+  setVideoZ,
+} from "../../../../state/action"
 
 class List extends React.Component {
   hovering(item) {
-    this.props.dispatch(changeChannel(item.image))
-    this.props.dispatch(setDescription(item.about))
+    this.props.dispatch(changeChannel(item.video))
+    this.props.dispatch(setDescription(item))
+    this.props.dispatch(setVideoZ(2))
   }
   antiHovering() {
+    this.props.dispatch(setVideoZ(0))
     this.props.dispatch(changeChannel(undefined))
     this.props.dispatch(setDescription(undefined))
   }

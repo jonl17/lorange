@@ -5,8 +5,10 @@ export const Container = styled.div`
   grid-area: ${GridNames.LeftTopCorner};
   box-sizing: border-box;
   padding: ${Margins.BrowserSmall};
-  border-bottom: solid ${Margins.Border} ${Colors.Black};
+  transition: 1s ease-out;
+  border-bottom: solid ${Margins.Border} ${Colors.Orange};
   border-bottom-style: dashed;
+  width: 100%;
 `
 export const Name = styled.p`
   font-size: ${FontSizes.Title};
