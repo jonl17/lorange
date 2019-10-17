@@ -21,18 +21,20 @@ class List extends React.Component {
   render() {
     const { sites } = this.props
     return (
-      <Listi>
-        {sites.map((site, index) => (
-          <Item key={index}>
-            <Text
-              onMouseOver={() => this.hovering(site.node.frontmatter)}
-              onMouseLeave={() => this.antiHovering()}
-            >
-              {site.node.frontmatter.title}
-            </Text>
-          </Item>
-        ))}
-      </Listi>
+      <>
+        <Listi>
+          {sites.map((site, index) => (
+            <Item key={index}>
+              <Text
+                onMouseOver={() => this.hovering(site.node.frontmatter)}
+                onMouseLeave={() => this.antiHovering()}
+              >
+                {site.node.frontmatter.title}
+              </Text>
+            </Item>
+          ))}
+        </Listi>
+      </>
     )
   }
 }

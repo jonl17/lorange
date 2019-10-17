@@ -36,7 +36,11 @@ const GetSites = () => (
 )
 
 const Efnisyfirlit = () => {
-  return <Container>{GetSites()}</Container>
+  return (
+    <>
+      <Container>{GetSites()}</Container>
+    </>
+  )
 }
 
 export default Efnisyfirlit

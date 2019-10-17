@@ -8,6 +8,28 @@ module.exports = {
   siteMetadata: {
     title: `Jón Gabríel Lorange`,
     jobs: [`Web Developer`, `Musician`],
+    skills: {
+      mostUsed: [
+        `Javascript`,
+        `React/Redux`,
+        `Linux`,
+        `GatsbyJS`,
+        `GraphQL`,
+        `HTML5`,
+        `CSS3`,
+        `Styled Components`,
+      ],
+      other: [
+        `jQuery`,
+        `C`,
+        `C++`,
+        `Java`,
+        `Python`,
+        `PHP`,
+        `Wordpress`,
+        `SQL`,
+      ],
+    },
   },
   plugins: [
     {

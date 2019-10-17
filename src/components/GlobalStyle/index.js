@@ -3,7 +3,6 @@ import { Colors } from "../../constants"
 
 export const GlobalStyle = createGlobalStyle`
     * {
-        background-color: ${Colors.White};
         color: ${Colors.Black};
     }
     html, body {
