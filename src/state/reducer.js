@@ -5,6 +5,7 @@ import {
   SET_VIDEOZ,
   TURN_OFF,
   TURN_ON,
+  VIDEO_LOADED,
 } from "./action"
 
 const initialState = {
@@ -13,6 +14,7 @@ const initialState = {
   description: undefined,
   videoZ: 0,
   laptopState: "off",
+  videoIsLoaded: undefined,
 }
 
 export default (state = initialState, action) => {
@@ -39,6 +41,8 @@ export default (state = initialState, action) => {
       return { ...state, laptopState: "off" }
     case TURN_ON:
       return { ...state, laptopState: "on" }
+    case VIDEO_LOADED:
+      return { ...state, videoIsLoaded: action.loaded }
     default:
       return state
   }

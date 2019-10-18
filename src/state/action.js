@@ -26,3 +26,8 @@ export const TURN_OFF = "TURN_OFF"
 export const turnOff = () => ({
   type: TURN_OFF,
 })
+export const VIDEO_LOADED = "VIDEO_LOADED"
+export const videoLoaded = loaded => ({
+  type: VIDEO_LOADED,
+  loaded,
+})
