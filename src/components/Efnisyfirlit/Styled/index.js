@@ -7,7 +7,6 @@ export const Container = styled.div`
   grid-area: ${GridNames.LeftBottomCorner};
   box-sizing: border-box;
   padding: 0 ${Margins.BrowserSmall} 0 ${Margins.BrowserSmall};
-  overflow-y: scroll;
   ::-webkit-scrollbar-thumb {
     background: ${Colors.Black};
   }

@@ -10,7 +10,7 @@ export const Margins = {
 }
 export const Colors = {
   White: "white",
-  Black: "#101010",
+  Black: "#232b2b",
   Orange: "#fdad5c",
   OrangeLight: "#F5C89C",
 }

@@ -11,13 +11,13 @@ const spinner = keyframes`
 `
 
 export const Container = styled.div`
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -17.5px;
-  margin-left: -17.5px;
+  margin-top: -25px;
+  margin-left: -25px;
   display: none;
   ${props =>
     props.state === `on` &&
