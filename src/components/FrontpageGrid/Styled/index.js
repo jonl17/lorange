@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { GridNames, Colors, Margins } from "../../../constants"
+import { GridNames } from "../../../constants"
 
 export const Container = styled.div`
   height: 100%;

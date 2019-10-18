@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Video } from "./Styled"
 import { connect } from "react-redux"
 
-const TV = ({ channel, videoZ }) => {
+const Screen = ({ channel, videoZ }) => {
   return (
     <Container videoZ={videoZ}>
       {channel !== undefined ? (
@@ -20,4 +20,4 @@ const mapStateToProps = state => ({
   videoZ: state.reducer.videoZ,
 })
 
-export default connect(mapStateToProps)(TV)
+export default connect(mapStateToProps)(Screen)

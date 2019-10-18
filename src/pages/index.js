@@ -2,9 +2,9 @@ import React from "react"
 import FrontpageGrid from "../components/FrontpageGrid"
 import FrontpageGridFixed from "../components/FrontpageGridFixed"
 import Efnisyfirlit from "../components/Efnisyfirlit"
-import TV from "../components/TV"
+import Screen from "../components/Screen"
 import Signature from "../components/Signature"
-import Description from "../components/Description"
+import Keyboard from "../components/Keyboard"
 
 export default () => (
   <>
@@ -13,8 +13,8 @@ export default () => (
       <Efnisyfirlit></Efnisyfirlit>
     </FrontpageGrid>
     <FrontpageGridFixed>
-      <TV></TV>
-      <Description></Description>
+      <Screen></Screen>
+      <Keyboard></Keyboard>
     </FrontpageGridFixed>
   </>
 )

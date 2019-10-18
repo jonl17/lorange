@@ -5,6 +5,8 @@ import {
   changeChannel,
   setDescription,
   setVideoZ,
+  turnOn,
+  turnOff,
 } from "../../../../state/action"
 
 class List extends React.Component {
@@ -12,11 +14,13 @@ class List extends React.Component {
     this.props.dispatch(changeChannel(item.video))
     this.props.dispatch(setDescription(item))
     this.props.dispatch(setVideoZ(2))
+    this.props.dispatch(turnOn())
   }
   antiHovering() {
     this.props.dispatch(setVideoZ(0))
     this.props.dispatch(changeChannel(undefined))
     this.props.dispatch(setDescription(undefined))
+    this.props.dispatch(turnOff())
   }
   render() {
     const { sites } = this.props

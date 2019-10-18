@@ -3,6 +3,8 @@ import {
   CHANGE_CHANNEL,
   SET_DESCRIPTION,
   SET_VIDEOZ,
+  TURN_OFF,
+  TURN_ON,
 } from "./action"
 
 const initialState = {
@@ -10,6 +12,7 @@ const initialState = {
   channel: undefined,
   description: undefined,
   videoZ: 0,
+  laptopState: "off",
 }
 
 export default (state = initialState, action) => {
@@ -32,6 +35,10 @@ export default (state = initialState, action) => {
       return { ...state, description: action.description }
     case SET_VIDEOZ:
       return { ...state, videoZ: action.z }
+    case TURN_OFF:
+      return { ...state, laptopState: "off" }
+    case TURN_ON:
+      return { ...state, laptopState: "on" }
     default:
       return state
   }
