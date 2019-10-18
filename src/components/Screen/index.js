@@ -2,17 +2,31 @@ import React from "react"
 import { Container, Video } from "./Styled"
 import { connect } from "react-redux"
 
-const Screen = ({ channel, videoZ }) => {
-  return (
-    <Container videoZ={videoZ}>
-      {channel !== undefined ? (
-        //  <Image fluid={channel.childImageSharp.fluid}></Image>
-        <Video loop autoPlay muted src={channel.publicURL}></Video>
-      ) : (
-        <></>
-      )}
-    </Container>
-  )
+class Screen extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    const { videoZ, channel } = this.props
+
+    return (
+      <Container videoZ={videoZ}>
+        {channel !== undefined ? (
+          //  <Image fluid={channel.childImageSharp.fluid}></Image>
+          <Video
+            onCanPlayThrough={() => console.log("loaded")}
+            loop
+            autoPlay
+            muted
+            src={channel.publicURL}
+          ></Video>
+        ) : (
+          <></>
+        )}
+      </Container>
+    )
+  }
 }
 
 const mapStateToProps = state => ({
