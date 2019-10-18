@@ -5,6 +5,9 @@ import { videoLoaded } from "../../state/action"
 import Loading from "./components/Loading"
 
 class Screen extends React.Component {
+  componentDidMount() {
+    this.props.dispatch(videoLoaded(undefined))
+  }
   render() {
     const { videoZ, channel, dispatch } = this.props
     return (

@@ -7,6 +7,7 @@ import {
   setVideoZ,
   turnOn,
   turnOff,
+  videoLoaded,
 } from "../../../../state/action"
 
 class List extends React.Component {
@@ -21,6 +22,7 @@ class List extends React.Component {
     this.props.dispatch(changeChannel(undefined))
     this.props.dispatch(setDescription(undefined))
     this.props.dispatch(turnOff())
+    this.props.dispatch(videoLoaded(undefined))
   }
   render() {
     const { sites } = this.props

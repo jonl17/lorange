@@ -3,6 +3,7 @@ import { Spinner, Container } from "./Styled"
 import { connect } from "react-redux"
 
 const Loading = ({ laptopState, videoIsLoaded }) => {
+  console.log(videoIsLoaded)
   return (
     <Container loadStatus={videoIsLoaded} state={laptopState}>
       <Spinner></Spinner>
