@@ -25,15 +25,15 @@ const spin = keyframes`
     }
     25% {
         transform: rotate(90deg);
-        background: ${Colors.Orange};
+        background: yellow;
     }
     50% {
         transform: rotate(180deg);
-        background: green;
+        background: ${Colors.Orange};
     }
     75% {
         transform: rotate(240deg);
-        background: blue;
+        background:  ${Colors.OrangeLight};
     }
     100% {
         transform: rotate(360deg);
@@ -41,10 +41,11 @@ const spin = keyframes`
     }
 `
 export const Spinner = styled.div`
-  height: 5px;
+  height: 100%;
   border-radius: 20px;
   width: 100%;
   background: white;
   animation: ${spin} 0.6s linear infinite;
   transition: 1s;
+  box-shadow: 1px 1px 1px 1px lightblue;
 `
