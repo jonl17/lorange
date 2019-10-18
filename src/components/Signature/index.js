@@ -19,7 +19,7 @@ const GetSignature = () => (
         <Name className="bold">{data.site.siteMetadata.title}</Name>
         <JobsContainer>
           {data.site.siteMetadata.jobs.map((job, index) => (
-            <Job key={index}>+ {job}</Job>
+            <Job key={index}> {job}</Job>
           ))}
         </JobsContainer>
       </>

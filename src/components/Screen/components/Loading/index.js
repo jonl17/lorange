@@ -1,12 +1,28 @@
 import React from "react"
-import { Spinner, Container } from "./Styled"
+import { Image, Container } from "./Styled"
 import { connect } from "react-redux"
+import { graphql, StaticQuery } from "gatsby"
+
+const GetOrange = () => (
+  <StaticQuery
+    query={graphql`
+      {
+        imageSharp(fluid: { originalName: { eq: "orange.png" } }) {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    `}
+    render={data => <Image fluid={data.imageSharp.fluid}></Image>}
+  ></StaticQuery>
+)
 
 const Loading = ({ laptopState, videoIsLoaded }) => {
   console.log(videoIsLoaded)
   return (
     <Container loadStatus={videoIsLoaded} state={laptopState}>
-      <Spinner></Spinner>
+      {GetOrange()}
     </Container>
   )
 }

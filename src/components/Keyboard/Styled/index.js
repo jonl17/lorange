@@ -7,11 +7,13 @@ export const Container = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: ${Margins.BrowserSmall};
-  transform: skew(-20deg, 0deg) translateX(-9.5%);
+  transform: skew(-15deg, 0deg) translateX(-6.5%);
   background: ${Colors.Black};
 `
 export const Text = styled.p`
   font-size: ${FontSizes.Paragraph};
   margin: 0;
   color: ${Colors.White} !important;
+  width: 80%;
+  margin: auto;
 `

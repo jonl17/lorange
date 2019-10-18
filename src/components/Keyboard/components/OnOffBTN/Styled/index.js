@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components"
+import { Colors } from "../../../../../constants"
 
 export const Outer = styled.div`
   position: absolute;
-  background: black;
+  background: ${Colors.Black};
   height: 40px;
   width: 40px;
   border-radius: 50%;

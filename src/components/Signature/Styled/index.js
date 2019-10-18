@@ -6,8 +6,6 @@ export const Container = styled.div`
   box-sizing: border-box;
   padding: ${Margins.BrowserSmall};
   transition: 1s ease-out;
-  border-bottom: solid ${Margins.Border} ${Colors.Orange};
-  border-bottom-style: dashed;
   width: 100%;
 `
 export const Name = styled.p`
@@ -19,6 +17,6 @@ export const JobsContainer = styled.div`
   flex-direction: column;
 `
 export const Job = styled.p`
-  font-size: ${FontSizes.Title};
+  font-size: ${FontSizes.Paragraph};
   margin: 0;
 `

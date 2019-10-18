@@ -21,8 +21,8 @@ export const TVSize = {
   },
 }
 export const FontSizes = {
-  Paragraph: "35px",
-  Title: "50px",
+  Paragraph: "25px",
+  Title: "40px",
 }
 export const Z = {
   show: 1,

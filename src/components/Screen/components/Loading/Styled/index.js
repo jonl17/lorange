@@ -1,5 +1,14 @@
 import styled, { keyframes, css } from "styled-components"
-import { Colors } from "../../../../../constants"
+import Img from "gatsby-image"
+
+const spinner = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+`
 
 export const Container = styled.div`
   height: 35px;
@@ -17,35 +26,6 @@ export const Container = styled.div`
       display: block;
     `}
 `
-
-const spin = keyframes`
-    0% {
-        transform: rotate(0deg);
-        background: white;
-    }
-    25% {
-        transform: rotate(90deg);
-        background: yellow;
-    }
-    50% {
-        transform: rotate(180deg);
-        background: ${Colors.Orange};
-    }
-    75% {
-        transform: rotate(240deg);
-        background:  ${Colors.OrangeLight};
-    }
-    100% {
-        transform: rotate(360deg);
-        background: white;
-    }
-`
-export const Spinner = styled.div`
-  height: 100%;
-  border-radius: 20px;
-  width: 100%;
-  background: white;
-  animation: ${spin} 0.6s linear infinite;
-  transition: 1s;
-  box-shadow: 1px 1px 1px 1px lightblue;
+export const Image = styled(Img)`
+  animation: ${spinner} 1.5s ease 0s infinite;
 `
