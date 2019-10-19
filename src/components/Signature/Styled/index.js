@@ -12,11 +12,12 @@ export const Name = styled.p`
   font-size: ${FontSizes.Title};
   margin: 0;
 `
-export const JobsContainer = styled.div`
+export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
 `
-export const Job = styled.p`
+export const About = styled.p`
   font-size: ${FontSizes.Paragraph};
   margin: 0;
 `
+export const Email = styled.a``

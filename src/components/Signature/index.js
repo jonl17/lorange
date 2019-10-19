@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Name, Job, JobsContainer } from "./Styled"
+import { Container, Name, About, AboutContainer, Email } from "./Styled"
 import { graphql, StaticQuery } from "gatsby"
 
 const GetSignature = () => (
@@ -10,6 +10,9 @@ const GetSignature = () => (
           siteMetadata {
             title
             jobs
+            contact {
+              email
+            }
           }
         }
       }
@@ -17,11 +20,17 @@ const GetSignature = () => (
     render={data => (
       <>
         <Name className="bold">{data.site.siteMetadata.title}</Name>
-        <JobsContainer>
-          {data.site.siteMetadata.jobs.map((job, index) => (
-            <Job key={index}> {job}</Job>
-          ))}
-        </JobsContainer>
+        <AboutContainer>
+          <About>
+            A Reykjavík-based web developer. For new projects contact via{" "}
+            <Email
+              target="_blank"
+              href={"mailto:" + data.site.siteMetadata.contact.email}
+            >
+              e-mail
+            </Email>
+          </About>
+        </AboutContainer>
       </>
     )}
   ></StaticQuery>

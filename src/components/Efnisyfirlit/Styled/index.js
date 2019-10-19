@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { GridNames, Margins, Colors } from "../../../constants"
+import { GridNames, Margins, Colors, FontSizes } from "../../../constants"
 
 export const Container = styled.div`
   height: 100%;
@@ -13,4 +13,7 @@ export const Container = styled.div`
   ::-webkit-scrollbar {
     width: ${Margins.BrowserSmall};
   }
+`
+export const Text = styled.p`
+  font-size: ${FontSizes.Paragraph};
 `

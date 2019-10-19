@@ -8,6 +8,10 @@ module.exports = {
   siteMetadata: {
     title: `Jón Gabríel Lorange`,
     jobs: [`Web Developer`, `Musician`],
+    contact: {
+      email: `jglorange@gmail.com`,
+      tel: `+354 618 1964`,
+    },
     skills: {
       mostUsed: [
         `Javascript`,

@@ -1,5 +1,5 @@
 import React from "react"
-import { Container } from "./Styled"
+import { Container, Text } from "./Styled"
 import { graphql, StaticQuery } from "gatsby"
 import List from "./components/List"
 
@@ -38,7 +38,10 @@ const GetSites = () => (
 const Efnisyfirlit = () => {
   return (
     <>
-      <Container>{GetSites()}</Container>
+      <Container>
+        <Text>Selected works:</Text>
+        {GetSites()}
+      </Container>
     </>
   )
 }
