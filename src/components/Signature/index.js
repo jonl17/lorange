@@ -27,7 +27,7 @@ const GetSignature = () => (
               target="_blank"
               href={"mailto:" + data.site.siteMetadata.contact.email}
             >
-              e-mail
+              e-mail.
             </Email>
           </About>
         </AboutContainer>

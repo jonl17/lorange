@@ -1,5 +1,5 @@
 import React from "react"
-import { Listi, Item, Text } from "./Styled"
+import { Listi, Item, Text, GoToSite } from "./Styled"
 import { connect } from "react-redux"
 import {
   changeChannel,
@@ -31,12 +31,14 @@ class List extends React.Component {
         <Listi>
           {sites.map((site, index) => (
             <Item key={index}>
-              <Text
-                onMouseOver={() => this.hovering(site.node.frontmatter)}
-                onMouseLeave={() => this.antiHovering()}
-              >
-                {site.node.frontmatter.title}
-              </Text>
+              <GoToSite target="_blank" href={site.node.frontmatter.url}>
+                <Text
+                  onMouseOver={() => this.hovering(site.node.frontmatter)}
+                  onMouseLeave={() => this.antiHovering()}
+                >
+                  {site.node.frontmatter.title}
+                </Text>
+              </GoToSite>
             </Item>
           ))}
         </Listi>

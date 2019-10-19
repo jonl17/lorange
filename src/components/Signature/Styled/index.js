@@ -20,4 +20,10 @@ export const About = styled.p`
   font-size: ${FontSizes.Paragraph};
   margin: 0;
 `
-export const Email = styled.a``
+export const Email = styled.a`
+  text-decoration: none;
+  color: ${Colors.Orange};
+  &&:hover {
+    font-style: italic;
+  }
+`

@@ -11,8 +11,8 @@ export const Text = styled.p`
   margin: 0;
   display: inline-block;
   &&:hover {
-    cursor: crosshair;
     color: ${Colors.Orange};
     font-style: italic;
   }
 `
+export const GoToSite = styled.a``
